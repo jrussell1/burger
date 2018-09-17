@@ -1,0 +1,34 @@
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <img src = "" height="200" class="center-block">
+            <h1 class="centerText Title">Eat the Burger</h1>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<br>
+
+<div class = "row">
+    <div class = "col-md-2">
+    </div>
+    <div class = "col-md-5">
+    </div>
+        {{#each burgers}}
+            {{#unless this.devoured}}
+                <div class = "row">
+                    <div class = "col-md-8">
+                        <div class = "uneaten">
+                            <P class="textCenter">
+                                {{this.id}}.{{this.burger_name}}
+                            </P>
+                        </div>
+                    </div>
+                    <div class = "col-md-4">
+                    </div>
+            <!-- need to figure out for the post and put logic and hide when eaten -->
+                </div>
+            {{/unless}}
+        {{/each}}
