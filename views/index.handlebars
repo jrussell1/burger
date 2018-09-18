@@ -1,34 +1,69 @@
-<div class = "container">
-    <div class = "row">
-        <div class = "col-md-12">
-            <img src = "" height="200" class="center-block">
-            <h1 class="centerText Title">Eat the Burger</h1>
+<div class="container">
+    <div> class="row">
+        <div class="col-md-12">
+        <img src="/public/assets/img/burger.png" height="250" class="center-block">
+        <h1 class="textCenter title">Eat the burger</h1>
         </div>
     </div>
-</div>
+  
+    <br>
 
-<br>
+    <br>
 
-<br>
-
-<div class = "row">
-    <div class = "col-md-2">
-    </div>
-    <div class = "col-md-5">
-    </div>
-        {{#each burgers}}
-            {{#unless this.devoured}}
-                <div class = "row">
-                    <div class = "col-md-8">
-                        <div class = "uneaten">
-                            <P class="textCenter">
-                                {{this.id}}.{{this.burger_name}}
-                            </P>
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+            <div>
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="uneaten">
+                                <p class="text-center">
+                                    {{this.id}}. {{this.burger_name}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <form action="/{{this.id}}?_method=PUT" method="POST">
+                            <input type="hidden" name="devoured" value="true">
+                            <button type="submit" class="center-block">Eat it!</button>
+                            </form>
                         </div>
                     </div>
-                    <div class = "col-md-4">
-                    </div>
-            <!-- need to figure out for the post and put logic and hide when eaten -->
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-md-4">
+            {{#each burgers}}
+            {{#if this.devoured}}
+                <div class="eaten">
+                    <p class="text-center">
+                        {{this.id}}. {{this.burger_name}}
+                    </p>
                 </div>
-            {{/unless}}
-        {{/each}}
+            {{/if}}
+            {{/each}}
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="create-update-form" action="/" method="POST">
+                <div class="form-group">
+                    <input type="text" id="ca" name="name" class="center-block burger_field">
+                </div>
+                <p class="text-center">Once you place your oder click the submit button.</p>
+                    <button type="submit" class="center-block btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
