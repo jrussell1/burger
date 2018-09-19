@@ -1,10 +1,10 @@
 # Eat the Burger
 
-## Node Express Handlebars
+## Node Express-Handlebars
 
 ### Overview
 
-This is a burger logger application using MySQL, Node, Express, Handlebars and a homemade ORM.
+This is a burger logger application using MySQL, Node, Express, Handlebars and a ORM.
 
 ### Before You Begin
 
@@ -29,6 +29,3 @@ This is a burger logger application using MySQL, Node, Express, Handlebars and a
 6. Install MySQL npm package: `npm install mysql`.
 
 #### Photo by Tristan Gassert on Unsplash
-
-
-
