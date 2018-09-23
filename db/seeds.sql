@@ -1,3 +1,5 @@
-INSERT INTO burgers (name) VALUES ("Melted Swiss Cheese and Shrooms Burger");
-INSERT INTO burgers (name) VALUES ("Buffalo Bleu Cheese Burger");
-INSERT INTO burgers (name) VALUES ("Bacon Cheddar Burger");
+INSERT INTO burgers(burger_name) VALUES ('Chipltle Spiced Burger');
+INSERT INTO burgers(burger_name) VALUES ('Teriyaki BBQ Burger');
+INSERT INTO burgers(burger_name) VALUES ('Shrooms and CHeese Burger');
+INSERT INTO burgers(burger_name) VALUES ('Bleu Cheese and Pancetta Stuffed Burger');
+INSERT INTO burgers(burger_name) VALUES ('Veggie Burger - Blah');
