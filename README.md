@@ -1,5 +1,7 @@
 # Eat the Burger
 
+![alt text](./public/assets/images/Burger.PNG)
+
 ## Node Express-Handlebars
 
 ### Overview
