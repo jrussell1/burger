@@ -33,5 +33,3 @@ This is a burger logger application using MySQL, Node, Express, Handlebars and a
 7. Install method-override package: 'npm install method-override'
 
 #### Photo by Tristan Gassert on Unsplash
-
-![alt text](./public/assets/images/Burger.PNG)
